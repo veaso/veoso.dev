@@ -1,0 +1,140 @@
+/* Updated Modern Dark Glassy Theme for Veoso */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0; padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0f17, #0c121b, #131924);
+  font-family: 'Inter', sans-serif;
+  color: #d7dde8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem 4rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover,
+a:focus {
+  color: #12b89b;
+  outline: none;
+}
+
+header {
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+  user-select: none;
+}
+
+.logo {
+  max-width: 140px;
+  filter: drop-shadow(0 0 3px #0b0d0d);
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+nav a {
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+}
+
+nav a.active,
+nav a:hover,
+nav a:focus {
+  background: rgba(29, 233, 182, 0.15);
+  color: #12b89b;
+}
+
+.glass-container {
+  background: rgba(15, 20, 28, 0.55);
+  box-shadow: 0 2px 8px 0 rgba(29, 233, 182, 0.15);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 18px;
+  border: 1px solid rgba(123, 143, 255, 0.25);
+  max-width: 960px;
+  width: 100%;
+  padding: 2.5rem 3rem;
+  margin-bottom: 2rem;
+}
+
+h1, h2 {
+  color: #ffffff;
+  /* subtle text shadow but softer */
+  /* text-shadow: 0 0 4px rgba(29, 233, 182, 0.5); */
+}
+h1 {
+  font-weight: 800;
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+h2 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+p, ul {
+  color: #c3cbd8dd;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+ul {
+  padding-left: 1.25rem;
+  list-style-type: disc;
+}
+
+footer {
+  width: 100%;
+  max-width: 960px;
+  text-align: center;
+  color: #536075;
+  font-size: 0.9rem;
+  padding: 1rem 1rem 2rem;
+  user-select: none;
+  letter-spacing: 0.03em;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .glass-container {
+    padding: 2rem 1.5rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  nav {
+    gap: 1rem;
+  }
+  header {
+    padding: 0 0.5rem;
+  }
+}
